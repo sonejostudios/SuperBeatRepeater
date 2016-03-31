@@ -18,7 +18,7 @@ Features:
 * The REPEAT! checkbox is usable as Momentary or Toggle
 
 --
-Demo: Demo: https://youtu.be/C38gep4vkm8?t=6m17s
+Demo: https://youtu.be/C38gep4vkm8?t=6m17s
 
 --
 
