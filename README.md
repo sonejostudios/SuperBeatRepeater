@@ -55,28 +55,28 @@ __Build/Install:__
 
 __Get Started with SuperBeatRepeater and SuperCutSequencer:__
 
-You'll need Jackd JackCtl.You will need to send Midi-Clock to SuperBeatRepeater & SuperCutSequencer. Use a Midi-Clock generator like jack_midi_clock (on Linux). You also need to set the Tempo to Jack Transport (whitch will be used by the Midi-Clock). Use any Jack-able Sequencer for that (Hydrogen, Ardour). If you want to use them with an Hardware Midi Controller you'll need to use the a2jmidid -e Bridge.
+You will need to send Midi-Clock to SuperBeatRepeater & SuperCutSequencer. Use a Midi-Clock generator like jack_midi_clock (on Linux). You also need to set the tempo (bpm) to Jack Transport (whitch will be used by the Midi-Clock). Use any Jack-able Sequencer for that (Hydrogen, Ardour). If you want to use them with an Hardware Midi Controller you'll need to use the a2jmidid -e Bridge.
 
-   * $ qjackctl &
+* $ qjackctl &
 
-* Start the Jack Server
+* (Start the Jack Server)
 
-   * $ jack_midi_clock &
-   * $ a2jmidid -e &
+* $ jack_midi_clock &
+* $ a2jmidid -e &
 
 * Start SuperBeatRepeater & SuperCutSequencer from the build folder :
    * $ ./SuperBeatRepeater
    * $ ./SuperCutSequencer
 
-* Launch the Sequencer (i.e Hydrogen) in Jack Transport Master mode
+* Launch the Sequencer (i.e Hydrogen) in _Jack Transport Master mode._
 
-* Connect jack_midi_clock to SuperBeatRepeater & SuperCutSequencer (via Jack Midi). The song tempo of the Sequencer musst be displayed in QjackCtl.
+* Connect jack_midi_clock to SuperBeatRepeater & SuperCutSequencer (via Jack Midi). The song tempo (bpm) of the Sequencer musst be displayed in QjackCtl.
 
 * Connect the Audio outputs of the Sequencer (or whatever sound source) to SuperBeatRepeater and/or SuperCutSequencer. (For instance, The drums to SuperBeatRepeater and the bass to SuperCutSequencer.)
 
-* Start Jack Transport (Play Button)
+* Start _Jack Transport_ (Play Button)
 
-* If the «Midi-Clock » checkboxes in SuperBeatRepeater & SuperCutSequencer are blinking (recieving Midi-Clock signal) and the Start/Stop checkboxes are checkt automatically (by Midi-Clock Start/Stop messages), then everything should work fine.
+* If the "Midi-Clock" checkboxes in SuperBeatRepeater & SuperCutSequencer are blinking (recieving Midi-Clock signal) and the "Start/Stop" checkboxes are checkt automatically (by Midi-Clock Start/Stop messages), then everything should work fine.
 
-* If you have a Midi Controller with LEDs (i.e LaunchControl XL, NanoKontrol,...), connect Midi Inputs and Outputs to SuperBeatRepeater & SuperCutSequencer (via Jack Midi / a2jmidid)
+* If you have a Midi Controller with LEDs (i.e LaunchControl XL, NanoKontrol,...), connect the Midi Inputs and Outputs to SuperBeatRepeater & SuperCutSequencer (via Jack Midi / a2jmidid)
 
