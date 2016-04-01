@@ -58,12 +58,12 @@ __Get Started with SuperBeatRepeater and SuperCutSequencer:__
 * You'll need Jackd JackCtl.You will need to send Midi-Clock to SuperBeatRepeater & SuperCutSequencer. Use a Midi-Clock generator like jack_midi_clock (on Linux). You also need to set the Tempo to Jack Transport (whitch will be used by the Midi-Clock). Use any Jack-able Sequencer for that (Hydrogen, Ardour). If you want to use them with an Hardware Midi Controller you'll need to use the a2jmidid -e Bridge.
 
 * $ qjackctl &
-* Start the Jack Server
+    * Start the Jack Server
 * $ jack_midi_clock &
 * $ a2jmidid -e &
 * Start SuperBeatRepeater & SuperCutSequencer from the build folder :
-** $ ./SuperBeatRepeater
-** $ ./SuperCutSequencer
+* $ ./SuperBeatRepeater
+* $ ./SuperCutSequencer
 
 * Launch the Sequencer (i.e Hydrogen) in Jack Transport Master mode
 
