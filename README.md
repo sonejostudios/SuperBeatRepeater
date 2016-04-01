@@ -48,7 +48,7 @@ __Build/Install:__
   * $ faust2jaqt -midi SuperBeatRepeater.dsp
 
 * To Start:
-  * ./SuperBeatRepeater
+  * $ ./SuperBeatRepeater
 
 
 --
