@@ -42,7 +42,7 @@ To change the Midi Controls simply edit the source file and recompile.
 --
 
 __Build/Install:__
-* Use the Faust Online Compiler to compile it as Standalone or Audio Plugin (LV2, VST, etc): http://faust.grame.fr/compiler
+* Use the Faust Online Compiler to compile it as Standalone Jack Application or Audio Plugin (LV2, VST, etc): http://faust.grame.fr/compiler
 * This software was tested only with Linux JackQT Faust Compiler.
 * Or compile them simply with (you'll need to install the Faust Compiler): 
   * $ faust2jaqt -midi SuperBeatRepeater.dsp
