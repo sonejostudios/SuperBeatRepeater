@@ -55,7 +55,7 @@ __Build/Install:__
 
 __Get Started with SuperBeatRepeater and SuperCutSequencer:__
 
-You will need to send Midi-Clock to SuperBeatRepeater & SuperCutSequencer. Use a Midi-Clock generator like jack_midi_clock (on GNU/Linux). You also need to set the tempo (bpm) to Jack Transport (which will be used by the Midi-Clock). Use any Jack-able Sequencer for that (Hydrogen, Ardour). If you want to use them with an Hardware Midi Controller you'll need to use the a2jmidid -e Bridge.
+You will need to send Midi-Clock to SuperBeatRepeater & SuperCutSequencer. Use a Midi-Clock generator like jack_midi_clock (on GNU/Linux). You also need to set the tempo (bpm) to Jack Transport (which will be used by the Midi-Clock). Use any Jack-able Sequencer for that (Hydrogen, Ardour,...). If you want to use them with an Hardware Midi Controller you'll need to use the a2jmidid -e Bridge.
 
 * $ qjackctl &
 
