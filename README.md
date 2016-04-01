@@ -1,4 +1,4 @@
-# SonejoBeatRepeater
+# SuperBeatRepeater
 Beat Repeater with Sidechain Beat Recognation and Midi-Clock Sync.
 
 Very useful i.e to add musical diversity by looping short parts of the stream (i.e drums).
