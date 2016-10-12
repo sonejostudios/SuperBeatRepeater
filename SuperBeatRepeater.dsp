@@ -2,13 +2,14 @@ declare name        "SuperBeatRepeater";
 declare version     "1.0";
 declare author      "Vincent Rateau";
 declare license     "GPL v3";
-declare reference   "www.sonejo.net";
+declare description	"Beat Repeater with Sidechain Beat Recognation and Midi-Clock Sync.";
 
-import("music.lib");
-import("oscillator.lib");
-import("filter.lib");
+
+import("analyzer.lib");
+import("basic.lib");
+import("signal.lib");
 import("math.lib");
-import("effect.lib");
+import("delay.lib");
 
 
 //  Beat Repeater with Sidechain Beat Recognation and Midi-Clock Sync.
@@ -40,16 +41,16 @@ with{
 	maxdelay = 262144; ////power of 2 (2^18) allows up to 5s delay at 44100
 	//maxdelay = 524288; ////power of 2 (2^19)
 
-	//delaytime	
-	delaytime =delay(maxdelay,delaylength);	
-	delaylength = select2(SLBR, beatrecognizer, delayslider): _* 4 * amountofbars: _ * 1/(presetswitch) ;  
+	//delaytime
+	delaytime =delay(maxdelay,delaylength);
+	delaylength = select2(SLBR, beatrecognizer, delayslider): _* 4 * amountofbars: _ * 1/(presetswitch) ;
 	// select between beat recognizer and bpm slier, then *4 to get the whole 4 beats as loop, then multiply by the amount of bars 		wanted in loop
 
 	// checkbox choice slider / beat recognizer
 	SLBR = checkbox("[06]Use BPM Slider instead of SC/MC sync[midi : ctrl 39]");
 
 	// BPM Slider
-	delayslider = (60/(hslider("[07]BPM Slider[midi : ctrl 23]", 120, 30, 240, 1))) * SR : int  ; 
+	delayslider = (60/(hslider("[07]BPM Slider[midi : ctrl 23]", 120, 30, 240, 1))) * SR : int  ;
 
 	// Amount of Bars in Loop
 	amountofbars = (nentry("[08]Amount of Bars in Loop", 1, 1, 2, 1)); //set the amount of bars
@@ -145,6 +146,3 @@ with{
 	multigui = checkbox("[1]Set Loop Divider Value x3[midi : ctrl 110]") : vbargraph("[style: led][midi : ctrl 110]", 0, 1);
 	multis = multi1, multi3 :> _;
 };
-
-
-
