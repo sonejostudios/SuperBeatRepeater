@@ -2,6 +2,7 @@ declare name        "SuperBeatRepeater";
 declare version     "1.0";
 declare author      "Vincent Rateau";
 declare license     "GPL v3";
+declare reference   "www.sonejo.net";
 declare description	"Beat Repeater with Sidechain Beat Recognation and Midi-Clock Sync.";
 
 
