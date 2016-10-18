@@ -7,8 +7,8 @@ Very useful i.e to add musical diversity by looping short parts of the stream (i
 
 __Features:__
 * Repeat the last loop of the stream according to the beats.
-* Beat recognition from Audio Sidechain Click track 
-* Beat recognation from Midi-Clock
+* Beat detection from audio sidechain click track 
+* Beat detection from Midi-Clock
 * BPM Slider to set the tempo manually
 * Very simple Tap Tempo if needed (no average)
 * Loop one or two bars
