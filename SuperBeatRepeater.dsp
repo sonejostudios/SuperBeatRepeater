@@ -6,11 +6,11 @@ declare reference   "www.sonejo.net";
 declare description	"Beat Repeater with Sidechain Beat Recognation and Midi-Clock Sync.";
 
 
-import("analyzer.lib");
-import("basic.lib");
-import("signal.lib");
-import("math.lib");
-import("delay.lib");
+import("analyzers.lib");
+import("basics.lib");
+import("signals.lib");
+import("maths.lib");
+import("delays.lib");
 
 
 //  Beat Repeater with Sidechain Beat Recognation and Midi-Clock Sync.
